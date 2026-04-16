@@ -1,103 +1,123 @@
-📓 Journal App (Spring Boot)
+<h1 align="center">📓 Journal App</h1>
 
-A RESTful backend application for managing personal journal entries. This project is built using Spring Boot, following a clean layered architecture with controllers, services, repositories, and entities.
+<p align="center">
+  A simple and secure Journal Application built using Spring Boot.
+</p>
 
-🚀 Features
-Create journal entries for a user
-Fetch all journal entries of a user
-Get a specific journal entry by ID
-Update an existing journal entry
-Delete a journal entry
-Exception handling and proper HTTP responses
-Clean and scalable architecture
-🏗️ Project Structure
-journalApp/
-│
-├── controller/
-│   ├── JournalEntryController.java
-│   ├── UserController.java
-│   └── HealthCheck.java
-│
-├── entity/
-│   ├── JournalEntry.java
-│   └── User.java
-│
-├── repository/
-│   ├── JournalEntryRepository.java
-│   └── UserRepository.java
-│
-├── service/
-│   ├── JournalEntryService.java
-│   └── UserService.java
-│
-├── resources/
-│   └── application.properties
-│
-└── JournalApplication.java
-🧠 Tech Stack
-Java
-Spring Boot
-Spring Web
-Spring Data (MongoDB likely)
-Maven
-REST API
-📌 API Endpoints
-📝 Journal Entry APIs
-1. Create Entry
-POST /journal/{userName}
+<hr>
 
-Request Body:
+<h2>🚀 Features</h2>
+<ul>
+  <li>Create, read, update, and delete journal entries</li>
+  <li>User authentication (login/signup)</li>
+  <li>RESTful APIs</li>
+  <li>Clean and scalable backend architecture</li>
+</ul>
 
-{
-  "title": "My Day",
-  "content": "Today was productive..."
-}
-2. Get All Entries of User
-GET /journal/{userName}
-3. Get Entry by ID
-GET /journal/id/{myId}
-4. Update Entry
-PUT /journal/id/{userName}/{myId}
-5. Delete Entry
-DELETE /journal/id/{userName}/{myId}
-⚙️ Setup Instructions
-1. Clone the repository
-git clone https://github.com/your-username/journal-app.git
-cd journal-app
-2. Open in IDE
-Recommended: IntelliJ IDEA
-3. Configure Database
+<hr>
 
-Update application.properties:
+<h2>🛠️ Tech Stack</h2>
+<ul>
+  <li><b>Backend:</b> Spring Boot</li>
+  <li><b>Database:</b> MySQL / MongoDB</li>
+  <li><b>Build Tool:</b> Maven</li>
+  <li><b>Language:</b> Java</li>
+</ul>
 
-spring.data.mongodb.uri=mongodb://localhost:27017/journaldb
-4. Run the application
+<hr>
+
+<h2>📂 Project Structure</h2>
+
+<pre>
+src/
+ ├── main/
+ │   ├── java/com/example/journal/
+ │   │   ├── controller/
+ │   │   ├── service/
+ │   │   ├── repository/
+ │   │   └── model/
+ │   └── resources/
+ │       ├── application.properties
+</pre>
+
+<hr>
+
+<h2>⚙️ Installation & Setup</h2>
+
+<ol>
+  <li>Clone the repository</li>
+</ol>
+
+<pre>
+git clone https://github.com/av3656/Journal-App.git
+</pre>
+
+<ol start="2">
+  <li>Navigate to the project folder</li>
+</ol>
+
+<pre>
+cd Journal-App
+</pre>
+
+<ol start="3">
+  <li>Run the application</li>
+</ol>
+
+<pre>
 mvn spring-boot:run
-🧪 Testing APIs
+</pre>
 
-Use tools like:
+<hr>
 
-Postman
-Thunder Client
-cURL
-📦 Response Handling
-200 OK → Success
-201 CREATED → Entry created
-204 NO CONTENT → Deleted successfully
-400 BAD REQUEST → Invalid input
-404 NOT FOUND → Resource not found
-🔒 Future Improvements
-Add Spring Security (JWT Authentication)
-Input validation using @Valid
-Global exception handling
-Pagination & sorting
-Swagger API documentation
-Dockerization
-👨‍💻 Author
+<h2>📬 API Endpoints</h2>
 
-Aman Verma
-Engineering Student | Backend Developer
+<table border="1" cellpadding="8">
+  <tr>
+    <th>Method</th>
+    <th>Endpoint</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/journal</td>
+    <td>Get all entries</td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/journal</td>
+    <td>Create entry</td>
+  </tr>
+  <tr>
+    <td>PUT</td>
+    <td>/api/journal/{id}</td>
+    <td>Update entry</td>
+  </tr>
+  <tr>
+    <td>DELETE</td>
+    <td>/api/journal/{id}</td>
+    <td>Delete entry</td>
+  </tr>
+</table>
 
-⭐ Contribution
+<hr>
 
-Feel free to fork the project and improve it. Contributions are welcome!
+<h2>📸 Screenshots</h2>
+
+<p>Add screenshots here (optional)</p>
+
+<hr>
+
+<h2>🤝 Contributing</h2>
+
+<p>Pull requests are welcome. For major changes, please open an issue first.</p>
+
+<hr>
+
+<h2>📄 License</h2>
+
+<p>This project is licensed under the MIT License.</p>
+
+<hr>
+
+<p align="center">⭐ If you like this project, give it a star!</p>
