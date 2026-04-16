@@ -1,4 +1,90 @@
-target/
+# =========================
+# Build folders
+# =========================
+/target/
+/build/
+/out/
+
+# Maven
 .mvn/wrapper/maven-wrapper.jar
 
+# Gradle
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+
+# =========================
+# Logs
+# =========================
+*.log
+logs/
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# IDEs
+# =========================
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Eclipse
 .project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# =========================
+# Java compiled files
+# =========================
+*.class
+
+# =========================
+# Environment / secrets
+# =========================
+.env
+.env.*
+application-local.properties
+application-dev.properties
+application-prod.properties
+
+# =========================
+# Spring Boot
+# =========================
+*.jar
+*.war
+*.ear
+
+# =========================
+# Temporary files
+# =========================
+*.swp
+*.tmp
+*.bak
+
+# =========================
+# Test output
+# =========================
+/test-output/
+/surefire-reports/
+
+# =========================
+# Database files (if local)
+# =========================
+*.db
+*.sqlite
+*.h2.db
+
+# =========================
+# Node (if frontend included)
+# =========================
+node_modules/
+dist/
