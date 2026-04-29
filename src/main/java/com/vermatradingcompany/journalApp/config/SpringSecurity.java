@@ -1,5 +1,4 @@
 package com.vermatradingcompany.journalApp.config;
-
 import com.vermatradingcompany.journalApp.service.UserDetailsServiceImplementation;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

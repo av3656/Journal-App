@@ -1,5 +1,4 @@
 package com.vermatradingcompany.journalApp.controller;
-
 import com.vermatradingcompany.journalApp.entity.JournalEntry;
 import com.vermatradingcompany.journalApp.entity.User;
 import com.vermatradingcompany.journalApp.service.JournalEntryService;
@@ -11,8 +10,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
-
-import java.time.LocalDateTime;
 import java.util.*;
 import java.util.stream.Collectors;
 
