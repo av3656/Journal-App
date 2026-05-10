@@ -88,5 +88,6 @@ application-prod.properties
 # =========================
 node_modules/
 dist/
-.yml
-
+*.yml
+*.properties
+src/main/resources/application.properties
