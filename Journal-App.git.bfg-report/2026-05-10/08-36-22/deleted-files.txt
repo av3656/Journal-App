@@ -1,3 +1,0 @@
-cd9000e0ab4a03aa9e46377b581e95375e0ad2d4 257 application-dev.yml
-d53e9b366b22c01860437574784d89f07f53041e 257 application-prod.yml
-ef7525a5bb2f36a07b12243f70d28d2dd9a755ad 161 application.yml
