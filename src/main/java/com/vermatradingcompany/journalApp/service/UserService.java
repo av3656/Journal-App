@@ -22,14 +22,27 @@ public class UserService {
     @Autowired
     private UserRepository userRepository;
 
+
+
     public void saveUser(User user){
         userRepository.save(user);
     }
 
-    public void saveNewUser (User user){
-        user.setPassword(passwordEncoder.encode(user.getPassword()));
-        user.setRoles(Arrays.asList("USER"));
-        userRepository.save(user);
+    public boolean saveNewUser (User user){
+      try {
+          user.setPassword(passwordEncoder.encode(user.getPassword()));
+          user.setRoles(Arrays.asList("USER"));
+          userRepository.save(user);
+          return true;
+      }
+      catch (Exception e){
+          log.info("Same username already exists.");
+          log.warn("Same username already exists.");
+          log.error("Same username already exists(ERROR).");
+          log.trace("Same username already exists.");
+          log.debug("Same username already exists.");
+          return false;
+      }
     }
 
     public void saveAdmin (User user){

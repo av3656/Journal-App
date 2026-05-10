@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: dev
+
+
+#
+#logging:
+#  level:
+#    com:
+#      vermatradingcompany:
+#        journalApp: ERROR
+
+
+#logging:
+#  level:
+#    root: OFF
